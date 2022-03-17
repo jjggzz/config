@@ -1,0 +1,14 @@
+server:
+  port: 7777
+
+spring:
+  application:
+    name: dynamic-config-client
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+grpc:
+  client:
+    GLOBAL:
+      negotiation-type: plaintext

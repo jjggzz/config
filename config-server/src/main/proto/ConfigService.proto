@@ -1,0 +1,16 @@
+syntax = "proto3"; // 指定proto版本
+package com.jgz.config.grpc;     // 指定默认包名
+
+
+service ConfigService {
+    rpc query (ConfigRequest) returns (ConfigResponse);
+}
+
+message ConfigRequest {
+    string key = 1;
+
+}
+message ConfigResponse {
+    string key = 1;
+    string value = 2;
+}

@@ -1,0 +1,22 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: dynamic-config-server
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+  datasource:
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url:
+    username:
+    password:
+
+
+
+grpc:
+  server:
+    port: 9000
+
